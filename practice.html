@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Generator</title>
+    <link rel="stylesheet" href="practice.css">
+
+</head>
+
+<body>
+    <div class="hero-sec">
+        <div class="stats_container">
+            <p class="rowStats">Rows: <span id="rowStats"></span></p>
+            <p class="colStats">Columns: <span id="colStats"></span></p>
+            <p class="totalGrid">Total Grids: <span id="gridStats"></span></p>
+            <p class="painted">Painted: <span id="paintedStats"></span></p>
+            <p class="remaining">Remaining: <span id="remainingStats"></span></p>
+        </div>
+        <div class="input_sliders">
+            <div class="slider">
+                <label for="width-range">Grid Width</label><br>
+                <input type="range" id="width-range" min="1" max="25">
+                <span id="width-display">00</span>
+            </div>
+
+            <div class="silder">
+                <label for="height-range">Grid Height</label><br>
+                <input type="range" id="height-range" min="1" max="25">
+                <span id="height-display">00</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button title="Create New Grid" id="create-grid">Create Grid</button>
+            <button title="Clear Existing Grid " id="clear-grid">Clear Grid</button>
+            <input title="Choose a Color From Picker" type="color" id="btncolor">
+            <button title="Erase the Drawing" id="btnerase">Erase</button>
+            <button title="Choose Painting" id="btnpaint">Paint</button>
+        </div>
+        <div class="container"> </div>
+    </div>
+
+    <script src="practice.js"></script>
+</body>
+
+</html>
